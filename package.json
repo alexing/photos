@@ -8,6 +8,7 @@
     "dev": "gatsby develop -o",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "deploy": "gatsby build && cp ./static/CNAME public/ &&gh-pages -d public --branch master",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "format": "prettier \"**/*.{md,mdx} \" --write",
